@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    margin: 0;
+    /*
+    Sometimes, by default some elements have margins set which give them extra whitespace. So to start us off, we are going
+    to remove all the default whitespace by setting the margin to zero for all elements.
+    */
+}
+
+body {
+	font-family: "Courier", Gadget, sans-serif;
+	background-color: #FFF;
+	color: #000;
+}
+.text {
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.container {
+	width: 60%;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: ;
+    /*
+    This is explained more on the homepage. The percentage width is what makes the site responsive, while the margin auto
+    centers the container.
+    */
+}
+
+header {
+	background-color: #000080;
+	width: 100%;
+    /*
+    This is the color of the header
+    */
+}
+
+.white {
+	color: #FFF;
+}
+
+.navy {
+	color: #000080;
+}
+
+.green {
+	color: #3CB371;
+}
+
+.yellow {
+	color: #FAB21F;
+}
+
+hr {
+	border-color: #000080;
+}
+
+.padding-top-25 {
+	padding-top: 25px;
+	color: #000;
+    /*
+    This class here is just a bit of a timesaver. If on the page you ever need to give an element just a little bit of extra
+    space on the top, apply this class.
+    */
+}
+.big {
+	font-size: 36px;
+}
+
+.bigger {
+	font-size: 40px;
+}
+
+.medium {
+	font-size: 18px;
+}
+
+.red {
+	color: #F00;
+}
+
+.outer-div {
+	width: 30%;
+	background-color: #000080;
+	border: 5px solid #000080;
+	padding: 3px;
+}
+
+.inner-div {
+	width: 60%;
+	background-color: #E6E6FA;
+	border: 5px solid #0000CD;
+	padding: 5px;
+}
+
+.floatl {
+	float: left;
+	width: 50%;
+}
+
+.floatr {
+	float: right;
+	width: 50%;
+}
+
+nav a {
+	color: #FFF;
+	background-color: #0079C2;
+	border-radius: 3px;
+	padding: 7px;
+	text-decoration: none;
+    /*
+    This is what turns the navigation into buttons. border-radius turns the rectanges into rounded ones, while the padding
+    makes the area colored by the background-color larger, which makes the buttons larger.
+    */
+}
+nav a:hover {
+	background-color: #00963F;
+    /*
+    This is what gives the buttons their hover effects.
+    */
+}
+.h1-left {
+	float: left;
+	font-size: 16px;
+    /*
+    This class adds a left float to whatever it is applied to. It is currently applied to the page h1 tag.
+    */
+}
+nav {
+    text-align: center;
+    /*
+    Since the page h1 tag has a float, we are going to add a float to the nav so it floats to the right of the h1 tag.
+    Since this was a float and not text-align it will stay on the same line.
+    */
+}
+.center {
+    text-align: center;
+
+}
+
+.center-block {
+    display: block;
+    margin: 0 auto;
+    /*
+    This is a little CSS "hack" to center images. Just apply this class to any image you want centered.
+    */
+}
+.cover-image {
+    width: 100%;
+    height: auto;
+    /*
+    This is how we make the responsive cover image. It has a percent width so it always fits across the whole screen. The height
+    auto makes it always have the right height and not be distorted.
+    */
+}
+main {
+	background-color: #;
+	margin-top: -5px;
+    /*
+    The reason why this element has a margin-top of -5 is because the page had some weird whitespace between the cover image and 
+    the main element so I got rid of that by scooting the main element up by 5 pixels.
+    */
+}
+.padding-top-15 {
+    padding-top: 15px;
+    /*
+    This class here is just a bit of a timesaver. If on the page you ever need to give an element just a little bit less extra
+    space on the top, apply this class.
+    */
+}
+footer {
+	background-color: #000000;
+    /*
+    background color for footer
+    */
+}
+
+footer1 {
+	background-color: #FFF;
+}
+
+@media (max-width: 700px) {
+    /*
+    This is a media query. I explain media queries a bit more on the home page. This particular one applies these rules when
+    the page is less than or equal to 700px wide.
+    */
+
+    nav {
+        float: none;
+        clear: both;
+        text-align: center;
+        margin-bottom: 20px;
+
+        /*
+        This removes the float from nav and also clears the float. It also changes the nav so it is centered, and adds 20px of 
+        extra space at the bottom of the nav.
+        */
+
+    }
+    .h1-left {
+        float: none;
+        clear: both;
+        text-align: center;
+        /*
+        This does all the same as the last one, except it doesn't add the extra 20px of space.
+        */
+    }
+}
+@media (max-width: 350px) {
+    /*
+    This one is just for the REALLY tiny screens so the buttons fit.
+    */
+    nav a {
+        padding: 4px;
+    }
+}
+
+</style>
+<title>Winter Sports: Week 2</title>
+</head>
+
+<body>
+
+<header>
+<br><h1 class="red center bigger">Lake Brantley High School</h1><br>
+</header>
+<main class="container"><br><br><br>
+
+
+
+<h2 class="center navy">Last Week's Recap and what's coming up this Week! Current Week:(6 November - 11 November, 2017) &nbsp;&nbsp;&nbsp;Recap:(30 October - 4 November)</h2><br><br><br>
+
+
+
+<img src="https://static.wixstatic.com/media/4479e3_c2fe2137f59a1aed1767be12ae7cbd8c.jpg/v1/fill/w_1040,h_691,al_c,q_90,usm_0.66_1.00_0.01/4479e3_c2fe2137f59a1aed1767be12ae7cbd8c.webp" width="100%"><br><br>
+<img src="https://static.wixstatic.com/media/4479e3_e06a97933e954453b837a2a66cb78c50~mv2.jpg/v1/fill/w_497,h_745,al_c,q_90,usm_0.66_1.00_0.01/4479e3_e06a97933e954453b837a2a66cb78c50~mv2.webp" width="50%">
+<img src="https://static.wixstatic.com/media/4479e3_a96719745373444a8630eef4abd0778b~mv2.jpg/v1/fill/w_498,h_745,al_c,q_90,usm_0.66_1.00_0.01/4479e3_a96719745373444a8630eef4abd0778b~mv2.webp" class="floatr" width="50%"><br><br>
+<img src="https://static.wixstatic.com/media/4479e3_c45958245f3140cab8d615a3394723d6~mv2_d_5759_2592_s_4_2.jpg/v1/fill/w_1040,h_468,al_c,q_90,usm_0.66_1.00_0.01/4479e3_c45958245f3140cab8d615a3394723d6~mv2_d_5759_2592_s_4_2.webp" width="100%"><br><br><br>
+
+
+
+<h1 class="center red">Week Upcoming (11/6 - 11/11)</h1><br><br>
+
+
+<h2 class="navy">Monday(11/6)</h2>
+<p class="navy">Boys Varsity Soccer Tournament vs. Bishop Moore, Edgewater, Lake Nona @ Lake Brantley. Bishop Moore vs. Lake Nona @ 5pm, Lake Brantley vs. Edgewater @ 7pm </p><br><br>
+
+
+<h2 class="navy">Tuesday(11/7)</h2>
+<p class="navy">Girls JV and Varsity Soccer have games vs. Lake Mary @ Lake Mary. JV starts @ 5pm, Varsity starts @ 7pm</p><br><br>
+
+
+<h2 class="navy">Wednesday(11/8)</h2>
+<p class="navy">Girls Varsity Weightlifting has a meet against Lake Mary @ home in the Blue Gym @ 4pm</p><br>
+
+
+<h2 class="navy">Thursday(11/9)</h2>
+<p class="navy">Girls JV and Varsity Soccer have a game against Lake Howell @ Home. JV @ 5pm & Varsity @ 7pm</p><br>
+
+<p class="navy"Boys Varsity Soccer Tournament vs. Bishop Moore, Edgewater, Lake Nona @ Bishop Moore. Lake Nona vs. Edgewater @ 6pm, Lake Brantley vs. Bishop Moore @ 8pm </p><br>
+
+<h2 class="navy">Friday(11/10)</h2>
+<p class="navy">Girls and Boys Varsity Swimming have a meet for States @ Sailfish Splashpark Aquatic Center @ 9am</p><br><br>
+
+
+<h2 class="navy">Saturday(11/11)</h2>
+<p class="navy">Boys and Girls Varsity Cross Country States @ Appalachee Regional Park @ 8:00am.</h2><br><br>
+
+<p class="navy">Our Homecoming Dance is tonight in the Main Gym from 7pm - 11pm!</h2><br><br>
+
+<img src="https://i.ytimg.com/vi/sIy1ILj0_Vc/maxresdefault.jpg" width="100%"><br><br>
+
+
+<h1 class="center red">Last Week's Recap(10/30 - 11/3)</h1><br><br>
+
+
+<h2 class="navy">Cross Country</h2>
+<p class="navy">Boys Cross Country placed 5th at districts and the Girls placed 2nd. They both teams move on to regionals. Girls Varsity did great, with Ashley Klingenberg finishing 3rd and Chloe Hyde finishing 9th, allowing them to move on to States. Boys Varsity also did well, with Juan Moscosco placing 7th overall.</p><br><br>
+
+
+<h2 class="navy">Weightlifting</h2>
+<p class="navy">Girls Weightlifting had a meet against Lyman, but lost 38 - 49.</p><br><br>
+
+
+<h2 class="navy">Swimming</h2>
+<p class="navy">Boys Swimming did a great job, with Gabe Parnell winning the 200 individual medley. Also the boys relay team of Gabe Parnell, Cole Parnell, Robert Frankenstein, and Jhon Moncada broke the school record in the 400 freestyle relay.</p><br><br>
+
+
+<h2 class="navy">Football</h2>
+<p class="navy">Varsity Football played a tough game against Osceola, losing 8 - 25 in their final game of the season.</p><br><br>
+
+
+<img src="https://static.wixstatic.com/media/0a70a4_629bd451357d473c9666b6d31ceaefe7~mv2_d_3675_1225_s_2.jpg/v1/fill/w_1040,h_347,al_c,q_90,usm_0.66_1.00_0.01/0a70a4_629bd451357d473c9666b6d31ceaefe7~mv2_d_3675_1225_s_2.webp" width="100%"><br><br>
+
+
+<div class="outer-div center-block">
+<h2 class="red center">Go Patriots!</h2>
+</div><br><br>
+
+
+</body>
+</html>
