@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    margin: 0;
+    /*
+    Sometimes, by default some elements have margins set which give them extra whitespace. So to start us off, we are going
+    to remove all the default whitespace by setting the margin to zero for all elements.
+    */
+}
+
+body {
+	font-family: "Courier", Gadget, sans-serif;
+	background-color: #FFF;
+	color: #000;
+}
+.text {
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.container {
+	width: 60%;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: ;
+    /*
+    This is explained more on the homepage. The percentage width is what makes the site responsive, while the margin auto
+    centers the container.
+    */
+}
+
+header {
+	background-color: #000080;
+	width: 100%;
+    /*
+    This is the color of the header
+    */
+}
+
+.white {
+	color: #FFF;
+}
+
+.navy {
+	color: #000080;
+}
+
+.green {
+	color: #3CB371;
+}
+
+.yellow {
+	color: #FAB21F;
+}
+
+hr {
+	border-color: #000080;
+}
+
+.padding-top-25 {
+	padding-top: 25px;
+	color: #000;
+    /*
+    This class here is just a bit of a timesaver. If on the page you ever need to give an element just a little bit of extra
+    space on the top, apply this class.
+    */
+}
+.big {
+	font-size: 36px;
+}
+
+.bigger {
+	font-size: 40px;
+}
+
+.medium {
+	font-size: 18px;
+}
+
+.red {
+	color: #F00;
+}
+
+.outer-div {
+	width: 30%;
+	background-color: #000080;
+	border: 5px solid #000080;
+	padding: 3px;
+}
+
+.inner-div {
+	width: 60%;
+	background-color: #E6E6FA;
+	border: 5px solid #0000CD;
+	padding: 5px;
+}
+
+.floatl {
+	float: left;
+	width: 50%;
+}
+
+.floatr {
+	float: right;
+	width: 50%;
+}
+
+nav a {
+	color: #FFF;
+	background-color: #0079C2;
+	border-radius: 3px;
+	padding: 7px;
+	text-decoration: none;
+    /*
+    This is what turns the navigation into buttons. border-radius turns the rectanges into rounded ones, while the padding
+    makes the area colored by the background-color larger, which makes the buttons larger.
+    */
+}
+nav a:hover {
+	background-color: #00963F;
+    /*
+    This is what gives the buttons their hover effects.
+    */
+}
+.h1-left {
+	float: left;
+	font-size: 16px;
+    /*
+    This class adds a left float to whatever it is applied to. It is currently applied to the page h1 tag.
+    */
+}
+nav {
+    text-align: center;
+    /*
+    Since the page h1 tag has a float, we are going to add a float to the nav so it floats to the right of the h1 tag.
+    Since this was a float and not text-align it will stay on the same line.
+    */
+}
+.center {
+    text-align: center;
+
+}
+
+.center-block {
+    display: block;
+    margin: 0 auto;
+    /*
+    This is a little CSS "hack" to center images. Just apply this class to any image you want centered.
+    */
+}
+.cover-image {
+    width: 100%;
+    height: auto;
+    /*
+    This is how we make the responsive cover image. It has a percent width so it always fits across the whole screen. The height
+    auto makes it always have the right height and not be distorted.
+    */
+}
+main {
+	background-color: #;
+	margin-top: -5px;
+    /*
+    The reason why this element has a margin-top of -5 is because the page had some weird whitespace between the cover image and 
+    the main element so I got rid of that by scooting the main element up by 5 pixels.
+    */
+}
+.padding-top-15 {
+    padding-top: 15px;
+    /*
+    This class here is just a bit of a timesaver. If on the page you ever need to give an element just a little bit less extra
+    space on the top, apply this class.
+    */
+}
+footer {
+	background-color: #000000;
+    /*
+    background color for footer
+    */
+}
+
+footer1 {
+	background-color: #FFF;
+}
+
+@media (max-width: 700px) {
+    /*
+    This is a media query. I explain media queries a bit more on the home page. This particular one applies these rules when
+    the page is less than or equal to 700px wide.
+    */
+
+    nav {
+        float: none;
+        clear: both;
+        text-align: center;
+        margin-bottom: 20px;
+
+        /*
+        This removes the float from nav and also clears the float. It also changes the nav so it is centered, and adds 20px of 
+        extra space at the bottom of the nav.
+        */
+
+    }
+    .h1-left {
+        float: none;
+        clear: both;
+        text-align: center;
+        /*
+        This does all the same as the last one, except it doesn't add the extra 20px of space.
+        */
+    }
+}
+@media (max-width: 350px) {
+    /*
+    This one is just for the REALLY tiny screens so the buttons fit.
+    */
+    nav a {
+        padding: 4px;
+    }
+}
+
+</style>
+<title>Winter Sports: Week 11</title>
+</head>
+
+<body>
+
+<header>
+<br><h1 class="red center bigger">Lake Brantley High School</h1><br>
+</header>
+<main class="container"><br><br><br>
+
+
+
+<h2 class="center navy">Last Week's Recap and what's coming up this Week! Current Week: (12 Febuary - 17 Febuary, 2018)</h2>
+<h2 class ="center navy">Recap: (5 Febuary - 10 Febuary)</h2><br><br><br>
+
+
+
+<img src="https://pbs.twimg.com/media/DVjaiU4U0AArJAA.jpg:large" width="100%"><br><br><br>
+
+
+<h1 class="center red">Early Signings</h1><br><br>
+
+
+<h3 class="navy center">Ethan Garrido –Baseball- Univ. of New Orleans, LA</h3><br>
+
+<h3 class="navy center">Tyler Falvey –Football- Middle TN State Univ.</h3><br>
+
+<h3 class="navy center">Shawn Mason –Football- Waldorf University, Iowa</h3><br>
+
+<h3 class="navy center">Angel Thomas –Football- University of Mary, ND</h3><br>
+
+<h3 class="navy center">Jack Wofford –Football- US Air Force Academy, CO</h3><br>
+
+<h3 class="navy center">Kyle Lesko –Lacrosse- North Greenville University, SC</h3><br>
+
+<h3 class="navy center">Madison Diaz Granados –Soccer– GA Coll. & State Univ.</h3><br>
+
+<h3 class="navy center">Luke Piveral –Soccer- Univ. of North FL.</h3><br>
+
+<h3 class="navy center">Shannon Hagmaier –Swim- Mass. Institute of Technology</h3><br>
+
+<h3 class="navy center">Julia Sherlock -Swim- Campbell University, NC</h3><br><br><br>
+
+
+
+<h1 class="center red">Week Upcoming (02/12 - 02/17)</h1><br><br>
+
+
+<h2 class="navy">Monday(02/12)</h2>
+<p class="navy">No Activities</p><br>
+
+<h2 class="navy">Tuesday(02/13)</h2>
+<p class="navy">Boys Basketball has Districts today against TBD @ TBD starting @ TBD</p><br>
+
+<p class="navy">Girls Varsity Water Polo has a game vs. Winter Springs @ Home starting @ 7pm</p><br>
+
+<p class="navy">Boys Varsity Water Polo has a game vs. Winter Springs @ Home starting @ 8pm</p><br>
+
+<h2 class="navy">Wednesday(02/14)</h2>
+<p class="navy">Boys Basketball has Districts tonight against TBD @ TBD starting @ TBD</p><br>
+
+<p class="navy">Boys Varsity Weightlifting has a meet vs. Lake Howell @ Home in the Blue Gym starting @ 4pm</p><br>
+
+<p class="navy">Boys Baseball has a Varsity Classic against West Orange @ West Orange starting @ 7pm</p><br>
+
+<h2 class="navy">Thursday(02/15)</h2>
+<p class="navy">Girls Varsity Tennis has a match against Lake Mary @ Lake Mary starting @ 3pm</p><br>
+
+<p class="navy">Boys Varsity Tennis has a match against Lake Mary @ Lake Mary starting @ 3pm</p><br>
+
+<p class="navy">Girls JV Fast-Pitch Softball has a game against Lake Mary @ 5pm, and Varsity starts @ 7pm</p><br>
+
+<p class="navy">Girls Varsity Lacrosse has a Pre-Season Classic against Olympia and Trinity Prep @ Home starting @ 6pm</p><br>
+
+<p class="navy">Boys Baseball has a Varsity Classic against vs. West Orange @ West Orange starting @ 7pm</p><br>
+
+<h2 class="navy">Friday(02/16)</h2>
+<p class="navy">Girls Varsity Water Polo has an Invitaional vs Lake Nona @ Lake Highland Prep starting @ TBD</p><br>
+
+<p class="navy">Boys Varsity Water Polo has an Invitaional vs Lake Nona @ Lake Highland Prep starting @ TBD</p><br>
+
+<p class="navy">Boys Varsity Wrestling has Districts against University @ University starting @ 2pm</p><br>
+
+<p class="navy">Girls JV Fast-Pitch Softball has a game against West Orange @ West Orange starting @ 5pm, with Varsity starting afterwords @ 7pm</p><br>
+
+<p class="navy">Boys Varsity Lacrosse has a Pre-Season Classic against Timber Creek @ Home starting @ 6pm</p><br>
+
+<p class="navy">Boys Varsity Basketball has Districts against TBD @ TBD starting @ TBA</p><br>
+
+<h2 class="navy">Saturday(02/17)</h2>
+<p class="navy">Girls Varsity Water Polo has an Invitaional vs Lake Nona @ Lake Highland Prep starting @ TBD</p><br>
+
+<p class="navy">Boys Varsity Water Polo has an Invitaional vs Lake Nona @ Lake Highland Prep starting @ TBD</p><br>
+
+<p class="navy">Varsity Track and Field competes vs. TBD @ Home starting @ 7am</h2><br><br><br>
+
+
+<img src="https://pbs.twimg.com/media/DVRZBoKXcAA0OX7.jpg" width="100%"><br><br>
+
+
+<h1 class="center red">Last Week's Recap (02/05 - 02/10)</h1><br><br>
+
+
+<h2 class="navy">Boys Basketball</h2><br>
+
+<h3 class="navy">Freshman</h3>
+<p class="navy">Boys Freshman Basketball won their last game of the season against Lake Howell 62 - 45</p><br>
+
+<h3 class="navy">JV</h3>
+<p class="navy">Boys JV Basketball won their last game of the season against Lake Howell 51 - 42</p><br>
+
+<h3 class="navy">Varsity</h3>
+<p class="navy">Boys Varisty Basketball won their last game of the season against Lake Howell 51 - 48. Great Season everybody!</p><br><br>
+
+
+<h2 class="navy">Boys Wrestling</h2><br>
+
+<h3 class="navy">JV</h3>
+<p class="navy">JV Boys Wrestling competed at States, with Joey Thomaston scoring 4.00 team points, Tymel Isham scoring 13.00 team points, Jael Morales scoring 4.00 team points, and Richie Martinez scoring 12.00 team points.</p><br>
+
+<h3 class="navy">To see the full results of the Wrestling Meet, click <a href="http://www.trackwrestling.com/predefinedtournaments/VerifyPassword.jsp?tournamentId=46560132&userType=viewer&pageName=TeamResults.jsp;teamBox=1240146132:fontSizeBox=12:patternBox=1000" class="red">here</a>!</h3><br><br>
+
+
+<h2 class="navy">Track and Field</h2><br>
+
+<h3 class="navy">Varsity</h3>
+<p class="navy">Ashley Klingenberg came in 1st in the 1600m and 2nd in the 600m</p><br>
+<p class="navy">Chloe Hyde came in 1st in the 800m and 3rd in the 1600m</p><br>
+<p class="navy">Ariel Manigault came in 1st in the high jump and 10th in the 300m hurdles</p><br>
+<p class="navy">Jordan Stevens came in 7th in the 600m and 7th in the 1600m</p><br>
+<p class="navy">Jordan Stevens led the 4x400m relay team to 4th place with team mates Rachel Ramirez, Ariel Manigault, and Gabrielle Mena</p><br>
+<p class="navy">Rachel Ramirez came in 9th in the 600m and 10th in the 800m</p><br>
+<p class="navy">Alex Rodrigues came in 9th in 100m hurdles</p><br>
+<p class="navy">Alex Rodrigues led the 4x100relay to 9th place with team mates Alisha Vanterpool, Rachel Ramirez, and Gabrielle Mena</p><br>
+<p class="navy">Juan Moscoso came in 8th in the 800m, 2nd in the 1200m, and 4th in the 1600m</p><br>
+
+<h3 class="navy">To see the full results of the Track Meet, click <a href="http://fl.milesplit.com/meets/264229/results/566491/formatted#.WoGJUqinHcs" class="red">here</a>!</h3><br><br>
+
+
+<div class="outer-div center-block">
+<h2 class="red center">Go Patriots!</h2>
+</div><br><br>
+
+
+</body>
+</html>
