@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    margin: 0;
+    /*
+    Sometimes, by default some elements have margins set which give them extra whitespace. So to start us off, we are going
+    to remove all the default whitespace by setting the margin to zero for all elements.
+    */
+}
+
+body {
+	font-family: "Courier", Gadget, sans-serif;
+	background-color: #FFF;
+	color: #000;
+}
+.text {
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.container {
+	width: 60%;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: ;
+    /*
+    This is explained more on the homepage. The percentage width is what makes the site responsive, while the margin auto
+    centers the container.
+    */
+}
+
+header {
+	background-color: #000080;
+	width: 100%;
+    /*
+    This is the color of the header
+    */
+}
+
+.white {
+	color: #FFF;
+}
+
+.navy {
+	color: #000080;
+}
+
+.green {
+	color: #3CB371;
+}
+
+.yellow {
+	color: #FAB21F;
+}
+
+hr {
+	border-color: #000080;
+}
+
+.padding-top-25 {
+	padding-top: 25px;
+	color: #000;
+    /*
+    This class here is just a bit of a timesaver. If on the page you ever need to give an element just a little bit of extra
+    space on the top, apply this class.
+    */
+}
+.big {
+	font-size: 36px;
+}
+
+.bigger {
+	font-size: 40px;
+}
+
+.medium {
+	font-size: 18px;
+}
+
+.red {
+	color: #F00;
+}
+
+.outer-div {
+	width: 30%;
+	background-color: #000080;
+	border: 5px solid #000080;
+	padding: 3px;
+}
+
+.inner-div {
+	width: 60%;
+	background-color: #E6E6FA;
+	border: 5px solid #0000CD;
+	padding: 5px;
+}
+
+.floatl {
+	float: left;
+	width: 50%;
+}
+
+.floatr {
+	float: right;
+	width: 50%;
+}
+
+nav a {
+	color: #FFF;
+	background-color: #0079C2;
+	border-radius: 3px;
+	padding: 7px;
+	text-decoration: none;
+    /*
+    This is what turns the navigation into buttons. border-radius turns the rectanges into rounded ones, while the padding
+    makes the area colored by the background-color larger, which makes the buttons larger.
+    */
+}
+nav a:hover {
+	background-color: #00963F;
+    /*
+    This is what gives the buttons their hover effects.
+    */
+}
+.h1-left {
+	float: left;
+	font-size: 16px;
+    /*
+    This class adds a left float to whatever it is applied to. It is currently applied to the page h1 tag.
+    */
+}
+nav {
+    text-align: center;
+    /*
+    Since the page h1 tag have a float, we are going to add a float to the nav so it floats to the right of the h1 tag.
+    Since this was a float and not text-align it will stay on the same line.
+    */
+}
+.center {
+    text-align: center;
+
+}
+
+.center-block {
+    display: block;
+    margin: 0 auto;
+    /*
+    This is a little CSS "hack" to center images. Just apply this class to any image you want centered.
+    */
+}
+.cover-image {
+    width: 100%;
+    height: auto;
+    /*
+    This is how we make the responsive cover image. It have a percent width so it always fits across the whole screen. The height
+    auto makes it always have the right height and not be distorted.
+    */
+}
+main {
+	background-color: #;
+	margin-top: -5px;
+    /*
+    The reason why this element have a margin-top of -5 is because the page had some weird whitespace between the cover image and 
+    the main element so I got rid of that by scooting the main element up by 5 pixels.
+    */
+}
+.padding-top-15 {
+    padding-top: 15px;
+    /*
+    This class here is just a bit of a timesaver. If on the page you ever need to give an element just a little bit less extra
+    space on the top, apply this class.
+    */
+}
+footer {
+	background-color: #000000;
+    /*
+    background color for footer
+    */
+}
+
+footer1 {
+	background-color: #FFF;
+}
+
+@media (max-width: 700px) {
+    /*
+    This is a media query. I explain media queries a bit more on the home page. This particular one applies these rules when
+    the page is less than or equal to 700px wide.
+    */
+
+    nav {
+        float: none;
+        clear: both;
+        text-align: center;
+        margin-bottom: 20px;
+
+        /*
+        This removes the float from nav and also clears the float. It also changes the nav so it is centered, and adds 20px of 
+        extra space at the bottom of the nav.
+        */
+
+    }
+    .h1-left {
+        float: none;
+        clear: both;
+        text-align: center;
+        /*
+        This does all the same as the last one, except it doesn't add the extra 20px of space.
+        */
+    }
+}
+@media (max-width: 350px) {
+    /*
+    This one is just for the REALLY tiny screens so the buttons fit.
+    */
+    nav a {
+        padding: 4px;
+    }
+}
+
+</style>
+<title>Spring Sports: Week 17</title>
+</head>
+
+<body>
+
+<header>
+<br><h1 class="red center bigger">Lake Brantley High School</h1><br>
+</header>
+<main class="container"><br><br><br>
+
+
+
+<h2 class="center navy">Last Week's Recap and what's coming up this Week! Current Week: (9 April - 13 April, 2018)</h2>
+<h2 class ="center navy">Recap: (2 April - 7 April)</h2><br><br><br>
+
+
+
+<img src="https://pbs.twimg.com/media/DZf69ToVoAAyr6a.jpg" width="100%"><br><br><br>
+
+
+
+<h1 class="center red">Week Upcoming (04/09 - 04/14)</h1><br><br>
+
+
+<h2 class="navy">Monday(04/09)</h2>
+<p class="navy">JV Grey Baseball has a game @ Seminole starting @ 6pm, and Varsity has a game vs. Seminole @ Home starting @ 7pm</p><br>
+
+<p class="navy">Boys Volleyball have games @ Winter Park HS, with JV starting @ 5:30pm and Varsity starting @ 7pm</p><br>
+
+<h2 class="navy">Tuesday(04/10)</h2>
+<p class="navy">Girls Varsity Lacrosse has a game vs. Oak Hall @ Home starting @ 6pm</p><br>
+
+<p class="navy">Boys Lacrosse have a game @ Bishop Moore, with JV starting @ 5:30 and Varsity starting @ 7pm</p><br>
+
+<p class="navy">Boys JV White Baseball have a game against Winter Park @ Home starting @ 6pm</p><br>
+
+<p class="navy">Girls Fast-Pitch Softball have a game vs. Wekiva @ Home, with JV starting @ 5:30pm and Varsity starting @ 7:30pm</p><br>
+
+<p class="navy">Boys Volleyball have games vs. Spruce Creek @ Home, with JV starting @ 5:30pm and Varsity starting @ 7pm</p><br>
+
+<p class="navy">Boys and Girls Varsity Water Polo have games vs. West Orange @ Home, with the Girls starting @ 7pm and the Boys starting @ 8pm</p><br>
+
+<h2 class="navy">Wednesday(04/11)</h2>
+<p class="navy">Varsity Track has a District meet @ Clermont Training Center starting @ 9am</p><br>
+
+<p class="navy">Boys Lacrosse have a game vs. Lake Highland Prep @ Home, with JV starting @ 5:30 and Varsity starting @ 7pm</p><br>
+
+<p class="navy">Girls Varsity Fast-Pitch Softball have a game @ Lyman, with JV starting @ 5:30pm and Varsity starting @ 7pm</p><br>
+
+<p class="navy">Boys and Girls Varsity Tennis have games vs. Spruce Creek @ Sanlando Park, both starting @ 3pm</p><br>
+
+<p class="navy">Girls Lacrosse have a game @ Bishop Moore, with JV starting @ 6pm and Varsity starting @ 7:30pm</p><br>
+
+<p class="navy">JV Boys Grey Baseball have a game vs. Lyman @ Home starting @ 6pm, and Varsity playing @ Lyman starting @ 7pm</p><br>
+
+<p class="navy">Boys and Girls Varsity Water Polo have games vs. Oviedo @ Home, with the Girls starting @ 7pm and the Boys starting @ 8pm</p><br>
+
+<h2 class="navy">Thursday(04/12)</h2>
+<p class="navy">Boys Volleyball have games vs. Crooms Academy @ Home, with JV starting @ 5:30pm and Varsity starting @ 7pm</p><br>
+
+<p class="navy">JV Boys White Baseball have a game @ Lake Mary starting @ 6pm, JV Boys Grey Baseball have a game vs. The First Academy @ Home starting @ 6pm</p><br>
+
+<p class="navy">Boys and Girls Water Polo have games vs. Olympia @ Home, with the Girls starting @ 7pm and the Boys starting @ 8pm</p><br>
+
+<h2 class="navy">Friday(04/13)</h2>
+<p class="navy">Boys Lacrosse have a game vs. Jupiter @ Home, with JV starting @ 6pm and Varsity starting @ 7:30pm</p><br>
+
+<p class="navy">Boys Varsity Baseball has a game against Jax Mandarin @ Home starting @ 7pm</p><br>
+
+<p class="navy">Girls Fast Pitch Softball have games against Hagerty @ Home, with JV starting @ 5pm and Varsity starting @ 7pm</p><br>
+
+<p class="navy">Boys and Girls Water Polo have games vs. Apopka @ Home, with the Girls starting @ 6:30pm and the Boys starting @ 7:30pm</p><br><br>
+
+
+<img src="https://pbs.twimg.com/media/DY69YMQWAAUZUBV.jpg" width="100%"><br><br>
+
+
+<h1 class="center red">Last Week's Recap (04/02 - 04/07)</h1><br><br>
+
+
+<h1 class="navy">Baseball</h1><br>
+
+<h3 class="navy">JV</h3>
+<p class="navy">Boys JV Grey and White Baseball teams had games, with the Grey team playing Edgewater and Seminole, . The White team had a game against Lake Howell, Ocoee, and Deland, winning 9 - 4, 7 - 1, and 8 - 7</p><br>
+
+<h3 class="navy">Varsity</h3>
+<p class="navy">Boys Varisty Baseball had games against West Orange and West Orange, losing 0 - 8 and 1 - 4</p><br>
+
+<h1 class="navy">Water Polo</h1><br>
+
+<h3 class="navy">Boys Varsity</h3>
+<p class="navy">Boys Varisty Water Polo lost to Seminole 2 - 16, and Lake Mary 10 - 15</p><br>
+
+<h3 class="navy">Girls Varsity</h3>
+<p class="navy">Girls Varisty Water Polo lost to Seminole 9 - 10, and 4 - 12 to Lake Mary</p><br>
+
+<h1 class="navy">Fast Pitch Softball</h1><br>
+
+<h3 class="navy">JV</h3>
+<p class="navy">Girls Varsity Fast Pitch Softball had a game against Apopka, winning 4 - 3</p><br>
+
+<h3 class="navy">Varsity</h3>
+<p class="navy">Girls Varsity Fast Pitch Softball had a game against West Orange, winning 4 - 0</p><br>
+
+<h1 class="navy">Boys Lacrosse</h1><br>
+
+<h3 class="navy">JV</h3>
+<p class="navy">JV Lacrosse had games against Apopka and Seminole, winning 16 - 6 and 16 - 3</p><br>
+
+<h3 class="navy">Varsity</h3>
+<p class="navy">Varsity Boys Lacrosse had games against Apopka and Seminole, winning 16 - 3 and 16 - 8</p><br>
+
+<h1 class="navy">Girls Lacrosse</h1><br>
+
+<h3 class="navy">JV</h3>
+<p class="navy">Girls JV Lacrosse had a game against Lake Highland Prep, losing 2 - 8</p><br>
+
+<h1 class="navy">Boys Volleyball</h1><br>
+
+<h3 class="navy">JV</h3>
+<p class="navy">JV Boys Volleyball had games against Lake Mary, Oviedo, and Lyman, losing 0 - 2, 0 - 2, and 0 - 2</p><br>
+
+<h3 class="navy">Varsity</h3>
+<p class="navy">JV Boys Volleyball had games against Lake Mary, Oviedo, and St. Cloud, losing 1 - 3, 0 - 3, and 0 - 3</p><br>
+
+<h1 class="navy">Beach Volleyball</h1><br>
+
+<h3 class="navy">Girls</h3>
+<p class="navy">Girls Beach Volleyball had games against Oviedo and Lyman, losing 0 - 5, 2 - 3</p><br>
+
+<h1 class="navy">Track and Field</h1><br>
+
+<p class="navy">Boys Track finished 2nd in Conference, and the Girls finished 3rd in Conference</p><br>
+
+<div class="outer-div center-block">
+<h2 class="red center">Go Patriots!</h2>
+</div><br><br>
+
+
+</body>
+</html>
