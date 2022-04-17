@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    margin: 0;
+    /*
+    Sometimes, by default some elements have margins set which give them extra whitespace. So to start us off, we are going
+    to remove all the default whitespace by setting the margin to zero for all elements.
+    */
+}
+
+body {
+	font-family: "Courier", Gadget, sans-serif;
+	background-color: #FFF;
+	color: #000;
+}
+.text {
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.container {
+	width: 60%;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: ;
+    /*
+    This is explained more on the homepage. The percentage width is what makes the site responsive, while the margin auto
+    centers the container.
+    */
+}
+
+header {
+	background-color: #000080;
+	width: 100%;
+    /*
+    This is the color of the header
+    */
+}
+
+.white {
+	color: #FFF;
+}
+
+.navy {
+	color: #000080;
+}
+
+.green {
+	color: #3CB371;
+}
+
+.yellow {
+	color: #FAB21F;
+}
+
+hr {
+	border-color: #000080;
+}
+
+.padding-top-25 {
+	padding-top: 25px;
+	color: #000;
+    /*
+    This class here is just a bit of a timesaver. If on the page you ever need to give an element just a little bit of extra
+    space on the top, apply this class.
+    */
+}
+.big {
+	font-size: 36px;
+}
+
+.bigger {
+	font-size: 40px;
+}
+
+.medium {
+	font-size: 18px;
+}
+
+.red {
+	color: #F00;
+}
+
+.outer-div {
+	width: 30%;
+	background-color: #000080;
+	border: 5px solid #000080;
+	padding: 3px;
+}
+
+.inner-div {
+	width: 60%;
+	background-color: #E6E6FA;
+	border: 5px solid #0000CD;
+	padding: 5px;
+}
+
+.floatl {
+	float: left;
+	width: 50%;
+}
+
+.floatr {
+	float: right;
+	width: 50%;
+}
+
+nav a {
+	color: #FFF;
+	background-color: #0079C2;
+	border-radius: 3px;
+	padding: 7px;
+	text-decoration: none;
+    /*
+    This is what turns the navigation into buttons. border-radius turns the rectanges into rounded ones, while the padding
+    makes the area colored by the background-color larger, which makes the buttons larger.
+    */
+}
+nav a:hover {
+	background-color: #00963F;
+    /*
+    This is what gives the buttons their hover effects.
+    */
+}
+.h1-left {
+	float: left;
+	font-size: 16px;
+    /*
+    This class adds a left float to whatever it is applied to. It is currently applied to the page h1 tag.
+    */
+}
+nav {
+    text-align: center;
+    /*
+    Since the page h1 tag has a float, we are going to add a float to the nav so it floats to the right of the h1 tag.
+    Since this was a float and not text-align it will stay on the same line.
+    */
+}
+.center {
+    text-align: center;
+
+}
+
+.center-block {
+    display: block;
+    margin: 0 auto;
+    /*
+    This is a little CSS "hack" to center images. Just apply this class to any image you want centered.
+    */
+}
+.cover-image {
+    width: 100%;
+    height: auto;
+    /*
+    This is how we make the responsive cover image. It has a percent width so it always fits across the whole screen. The height
+    auto makes it always have the right height and not be distorted.
+    */
+}
+main {
+	background-color: #;
+	margin-top: -5px;
+    /*
+    The reason why this element has a margin-top of -5 is because the page had some weird whitespace between the cover image and 
+    the main element so I got rid of that by scooting the main element up by 5 pixels.
+    */
+}
+.padding-top-15 {
+    padding-top: 15px;
+    /*
+    This class here is just a bit of a timesaver. If on the page you ever need to give an element just a little bit less extra
+    space on the top, apply this class.
+    */
+}
+footer {
+	background-color: #000000;
+    /*
+    background color for footer
+    */
+}
+
+footer1 {
+	background-color: #FFF;
+}
+
+@media (max-width: 700px) {
+    /*
+    This is a media query. I explain media queries a bit more on the home page. This particular one applies these rules when
+    the page is less than or equal to 700px wide.
+    */
+
+    nav {
+        float: none;
+        clear: both;
+        text-align: center;
+        margin-bottom: 20px;
+
+        /*
+        This removes the float from nav and also clears the float. It also changes the nav so it is centered, and adds 20px of 
+        extra space at the bottom of the nav.
+        */
+
+    }
+    .h1-left {
+        float: none;
+        clear: both;
+        text-align: center;
+        /*
+        This does all the same as the last one, except it doesn't add the extra 20px of space.
+        */
+    }
+}
+@media (max-width: 350px) {
+    /*
+    This one is just for the REALLY tiny screens so the buttons fit.
+    */
+    nav a {
+        padding: 4px;
+    }
+}
+
+</style>
+<title>Winter Sports & Fall Recap: Week 1</title>
+</head>
+
+<body>
+
+<header>
+<br><h1 class="red center bigger">Lake Brantley High School</h1><br>
+</header>
+<main class="container"><br><br><br>
+
+
+
+<h2 class="center navy">Fall Sports Recap and what's coming up this week! (30 October - 3 November, 2017)</h2><br><br><br>
+
+
+
+<img src="https://static.wixstatic.com/media/4479e3_c2fe2137f59a1aed1767be12ae7cbd8c.jpg/v1/fill/w_1040,h_691,al_c,q_90,usm_0.66_1.00_0.01/4479e3_c2fe2137f59a1aed1767be12ae7cbd8c.webp" width="100%">
+<img src="https://static.wixstatic.com/media/4479e3_e06a97933e954453b837a2a66cb78c50~mv2.jpg/v1/fill/w_497,h_745,al_c,q_90,usm_0.66_1.00_0.01/4479e3_e06a97933e954453b837a2a66cb78c50~mv2.webp" width="50%">
+<img src="https://static.wixstatic.com/media/4479e3_a96719745373444a8630eef4abd0778b~mv2.jpg/v1/fill/w_498,h_745,al_c,q_90,usm_0.66_1.00_0.01/4479e3_a96719745373444a8630eef4abd0778b~mv2.webp" class="floatr" width="50%">
+<img src="https://static.wixstatic.com/media/4479e3_c45958245f3140cab8d615a3394723d6~mv2_d_5759_2592_s_4_2.jpg/v1/fill/w_1040,h_468,al_c,q_90,usm_0.66_1.00_0.01/4479e3_c45958245f3140cab8d615a3394723d6~mv2_d_5759_2592_s_4_2.webp" width="100%"><br><br><br>
+
+
+
+<h1 class="center red">FALL SPORTS RECAP</h1><br>
+
+<h2 class="navy">Bowling</h2>
+<p class="navy">Boys Varsity Bowling had a tough season, winning only 2 out of their 16 matches. Girls Varsity Bowling had better luck, going 5-9-0 and crushed Lyman 1697-1022. Everyone did a great job!</p><br><br>
+
+
+<h2 class="navy">Football</h2>
+<p class="navy">Varsity Football is still playing. JV Football had a great season, going 5-2, and also beat Lyman 42-6 on their last game. Freshman Boys had an amazing season, going 7-1, only losing at Lake Mary to the Rams. Overall a great season of Football at Lake Brantley.</p><br><br>
+
+
+<h2 class="navy">Golf</h2>
+<p class="navy">Boys Golf had a great season, with Ian Cameron and Ryan Carey advancing to regions. Girls Golf had many cancelations because of weather, but Paige Anderson was still able to advance to Regionals. We are definitely looking forward to next season!</p><br><br>
+
+
+<h2 class="navy">Slow Pitch Softball</h2>
+<p class="navy">Slow Pitch Softball had a tough season, going 4-10. Despite this, the girls still were able to come out with outstanding wins against Seminole and Lake Howell, winning 14-0 and 13-0. Great job ladies!</p><br><br>
+
+
+<h2 class="navy">Girls Volleyball</h2>
+<p class="navy">Girls Varsity Volleyball came away with 10-8 record, winning 2 games without the other team even getting a set. JV Volleyball had a tougher season, winning 3 out of their 14 games. The freshman girls however, did a fantastic job, going 9-4, crushing their opponents. Great job girls, we're looking forward to the next season!</p><br><br>
+
+
+<h2 class="navy">Cross Country</h2>
+<p class="navy">Boys and Girls Varsity Cross Country competed in the District meet @ Seminole State College this past Saturday. The Girls placed 2nd overall, and the Boys placed 5th. Both will advance to Regionals at the Flagler County Fairgrounds this Saturday. Good Luck!</p><br><br>
+
+
+<img src="https://i.ytimg.com/vi/sIy1ILj0_Vc/maxresdefault.jpg" width="100%"><br><br>
+
+
+<h1 class="center red">Week Upcoming (10/30 - 11/3)</h1><br><br>
+
+
+<h2 class="navy">Monday(10/30)</h2>
+<p class="navy">Girls Basketball tryouts this week from 2:45pm - 4:00pm in the Blue Gym.</p><br><br>
+
+
+<h2 class="navy">Tuesday(10/31)</h2>
+<p class="navy">Lake Brantley Cheer practice is in the Brantley South Gym from 3:00pm to 5:00pm.</p><br><br>
+
+
+<h2 class="navy">Wednesday(11/1)</h2>
+<p class="navy">Swimming Boys and Girls Varsity Regionals are today @ the O'Connell Center, hosted by F. W. Buchholz High School @ 9:00am. Good luck!</p><br>
+
+<p class="navy">Girls Weightlifting vs. Lyman in the weight room at 4pm
+</p><br><br>
+
+
+<h2 class="navy">Thursday(11/2)</h2>
+<p class="navy">Girls Soccer Pre Season at Geneva</p><br><br>
+
+
+<h2 class="navy">Friday(11/3)</h2>
+<p class="navy">Varsity Football at Osceola HS 7:30pm</p><br><br>
+
+
+<h2 class="navy">Saturday(11/4)</h2>
+<p class="navy">Boys and Girls Varsity Cross Country Regionals @ the Flagler County Fairgrounds starting @ 8:00am. Run hard!</h2><br><br>
+
+
+<img src="https://static.wixstatic.com/media/0a70a4_629bd451357d473c9666b6d31ceaefe7~mv2_d_3675_1225_s_2.jpg/v1/fill/w_1040,h_347,al_c,q_90,usm_0.66_1.00_0.01/0a70a4_629bd451357d473c9666b6d31ceaefe7~mv2_d_3675_1225_s_2.webp" width="100%"><br><br>
+
+
+<div class="outer-div center-block">
+<h2 class="red center">Go Patriots!</h2>
+</div><br><br>
+
+
+</body>
+</html>
