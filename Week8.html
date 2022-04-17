@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    margin: 0;
+    /*
+    Sometimes, by default some elements have margins set which give them extra whitespace. So to start us off, we are going
+    to remove all the default whitespace by setting the margin to zero for all elements.
+    */
+}
+
+body {
+	font-family: "Courier", Gadget, sans-serif;
+	background-color: #FFF;
+	color: #000;
+}
+.text {
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.container {
+	width: 60%;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: ;
+    /*
+    This is explained more on the homepage. The percentage width is what makes the site responsive, while the margin auto
+    centers the container.
+    */
+}
+
+header {
+	background-color: #000080;
+	width: 100%;
+    /*
+    This is the color of the header
+    */
+}
+
+.white {
+	color: #FFF;
+}
+
+.navy {
+	color: #000080;
+}
+
+.green {
+	color: #3CB371;
+}
+
+.yellow {
+	color: #FAB21F;
+}
+
+hr {
+	border-color: #000080;
+}
+
+.padding-top-25 {
+	padding-top: 25px;
+	color: #000;
+    /*
+    This class here is just a bit of a timesaver. If on the page you ever need to give an element just a little bit of extra
+    space on the top, apply this class.
+    */
+}
+.big {
+	font-size: 36px;
+}
+
+.bigger {
+	font-size: 40px;
+}
+
+.medium {
+	font-size: 18px;
+}
+
+.red {
+	color: #F00;
+}
+
+.outer-div {
+	width: 30%;
+	background-color: #000080;
+	border: 5px solid #000080;
+	padding: 3px;
+}
+
+.inner-div {
+	width: 60%;
+	background-color: #E6E6FA;
+	border: 5px solid #0000CD;
+	padding: 5px;
+}
+
+.floatl {
+	float: left;
+	width: 50%;
+}
+
+.floatr {
+	float: right;
+	width: 50%;
+}
+
+nav a {
+	color: #FFF;
+	background-color: #0079C2;
+	border-radius: 3px;
+	padding: 7px;
+	text-decoration: none;
+    /*
+    This is what turns the navigation into buttons. border-radius turns the rectanges into rounded ones, while the padding
+    makes the area colored by the background-color larger, which makes the buttons larger.
+    */
+}
+nav a:hover {
+	background-color: #00963F;
+    /*
+    This is what gives the buttons their hover effects.
+    */
+}
+.h1-left {
+	float: left;
+	font-size: 16px;
+    /*
+    This class adds a left float to whatever it is applied to. It is currently applied to the page h1 tag.
+    */
+}
+nav {
+    text-align: center;
+    /*
+    Since the page h1 tag has a float, we are going to add a float to the nav so it floats to the right of the h1 tag.
+    Since this was a float and not text-align it will stay on the same line.
+    */
+}
+.center {
+    text-align: center;
+
+}
+
+.center-block {
+    display: block;
+    margin: 0 auto;
+    /*
+    This is a little CSS "hack" to center images. Just apply this class to any image you want centered.
+    */
+}
+.cover-image {
+    width: 100%;
+    height: auto;
+    /*
+    This is how we make the responsive cover image. It has a percent width so it always fits across the whole screen. The height
+    auto makes it always have the right height and not be distorted.
+    */
+}
+main {
+	background-color: #;
+	margin-top: -5px;
+    /*
+    The reason why this element has a margin-top of -5 is because the page had some weird whitespace between the cover image and 
+    the main element so I got rid of that by scooting the main element up by 5 pixels.
+    */
+}
+.padding-top-15 {
+    padding-top: 15px;
+    /*
+    This class here is just a bit of a timesaver. If on the page you ever need to give an element just a little bit less extra
+    space on the top, apply this class.
+    */
+}
+footer {
+	background-color: #000000;
+    /*
+    background color for footer
+    */
+}
+
+footer1 {
+	background-color: #FFF;
+}
+
+@media (max-width: 700px) {
+    /*
+    This is a media query. I explain media queries a bit more on the home page. This particular one applies these rules when
+    the page is less than or equal to 700px wide.
+    */
+
+    nav {
+        float: none;
+        clear: both;
+        text-align: center;
+        margin-bottom: 20px;
+
+        /*
+        This removes the float from nav and also clears the float. It also changes the nav so it is centered, and adds 20px of 
+        extra space at the bottom of the nav.
+        */
+
+    }
+    .h1-left {
+        float: none;
+        clear: both;
+        text-align: center;
+        /*
+        This does all the same as the last one, except it doesn't add the extra 20px of space.
+        */
+    }
+}
+@media (max-width: 350px) {
+    /*
+    This one is just for the REALLY tiny screens so the buttons fit.
+    */
+    nav a {
+        padding: 4px;
+    }
+}
+
+</style>
+<title>Winter Sports: Week 8</title>
+</head>
+
+<body>
+
+<header>
+<br><h1 class="red center bigger">Lake Brantley High School</h1><br>
+</header>
+<main class="container"><br><br><br>
+
+
+
+<h2 class="center navy">Last Week's Recap and what's coming up this Week! Current Week: (22 January - 27 January, 2018)</h2>
+<h2 class ="center navy">Recap: (15 January - 20 January)</h2><br><br><br>
+
+
+
+<h1 class="center red">Week Upcoming (01/22 - 01/27)</h1><br><br>
+
+
+<h2 class="navy">Monday(01/22)</h2>
+<p class="navy">Girls Varsity Soccer has Districts vs. Oviedo @ Away starting @ 7pm</p><br>
+
+<p class="navy">Boys Varsity Soccer has a game vs. Wekiva @ Home starting @ 7pm, and JV vs Forest Lake Academy @ 5pm</p><br>
+
+<p class="navy">Girls Basketball has a game vs. Cypress Creek @ Cypress Creek High School, with JV starting @ 5:30pm and Varsity starting @ 7pm</p><br>
+
+<h2 class="navy">Tuesday(01/23)</h2>
+<p class="navy">Boys Basketball has a game vs. Olympia @ Home, with the Freshman starting @ 4:30pm, JV starting @ 6pm, and Varsity starting @ 7:30pm</p><br>
+
+<p class="navy">Girls Basketball has a game today against Oviedo @ Oviedo High School, with JV starting @ 5:30pm and Varsity starting @ 7pm</p><br>
+
+<h2 class="navy">Wednesday(01/24)</h2>
+<p class="navy">Boys Basketball has a game against Lyman @ Lyman High School, with Freshman starting @ 4:30, JV starting @ 6pm and Varsity starting @ 7:30pm</p><br>
+
+<p class="navy">Girls Basketball has a game vs. Freedom @ Freedom High School, with JV starting @ 6pm and Varsity starting @ 7:30pm</p><br>
+
+<p class="navy">Girls Varsity Soccer has the District Semi Finals vs. TBD @ Oviedo High School starting @ 5pm and then @ 7pm</p><br>
+
+<p class="navy">Boys Soccer has a game vs. Colonial @ Home, with JV starting @ 5pm and Varsity starting @ 7pm</p><br>
+
+<p class="navy">Boys Varsity Wrestling has a meet on Senior night @ 6 vs. Ocoee @ Home in the Main gym, with JV starting @ 5pm and Varsity starting @ 7pm</p><br>
+
+<h2 class="navy">Thursday(01/25)</h2>
+
+<p class="navy">No Events Today</p><br>
+
+<h2 class="navy">Friday(01/26)</h2>
+<p class="navy">Boys Basketball has a game vs. Winter Springs @ Home. The Freshman game starts @ 4:30pm, JV @ 6pm, and the Varsity game @ 7:30pm</p><br>
+
+<h2 class="navy">Saturday(01/27)</h2>
+<p class="navy">Boys Varisty Wrestling has an Invitational vs. Timber Creek @ Timber Creek High School @ 9am</h2><br><br>
+
+
+<img src="https://photos.smugmug.com/Galleries/20172018/Weightlifting-2017-2018/Girls-Varsity-District-Weightlifting-Meet/i-CCV43b3/0/30802667/XL/CS2A4863-XL.jpg" width="100%"><br><br>
+
+
+<h1 class="center red">Last Week's Recap (01/15 - 01/20)</h1><br><br>
+
+
+<h2 class="navy">Girls Basketball</h2><br>
+
+<h3 class="navy">JV</h3>
+<p class="navy">Girls JV Basketball had tough games against Lyman, Winter Springs, and Lake Howell, losing 33 - 34, winning 48 - 35, and losing 26 - 42</p><br>
+
+<h3 class="navy">Varsity</h3>
+<p class="navy">Girls Varisty Basketball also had tough games against Lyman, Winter Springs, and Lake Howell, losing 51 - 56, 29 - 57 and 38 - 76</p><br><br>
+
+
+<h2 class="navy">Boys Basketball</h2><br>
+
+<h3 class="navy">Freshman</h3>
+<p class="navy">Boys Freshman Basketball had close games against Apopka and Lake Mary, losing Away and winning 51 - 47</p><br>
+
+<h3 class="navy">JV</h3>
+<p class="navy">Boys JV Basketball had a great game against Apopka, University, and Lake Mary, losing Away but winning 51 - 46 and 53 - 41</p><br>
+
+<h3 class="navy">Varsity</h3>
+<p class="navy">Boys Varisty Basketball had tough games against Apopka, University, and Lake Mary, losing 39 - 50, winning 45 - 43 and 76 - 65</p><br><br>
+
+
+<h2 class="navy">Boys Soccer</h2><br>
+
+<h3 class="navy">JV</h3>
+<p class="navy">JV Boys Soccer had games against Lyman and Winter Springs, losing Away and winning 4 - 1</p><br>
+
+<h3 class="navy">Varsity</h3>
+<p class="navy">Varsity Boys Soccer had tough games against Lyman and Winter Springs, losing 1 - 3 and 2 - 1</p><br><br>
+
+
+<h2 class="navy">Girls Soccer</h2><br>
+
+<h3 class="navy">JV</h3>
+<p class="navy">JV Girls Soccer had an Away game to close out the season against Dr. Phillips, and lost 0 - 7</p><br>
+
+<h3 class="navy">Varsity</h3>
+<p class="navy">Varsity Girls Soccer had an Away game to close out the season against Dr. Phillips, and lost 1 - 8</p><br><br>
+
+
+<h2 class="navy">Girls Weightlifting</h2>
+<p class="navy">Girls Varsity Weightlifting came in 5th and Elana Korkes won her weight class</p><br><br>
+
+
+<h2 class="navy">Wrestling</h2>
+<p class="navy">Girls Wrestling did great, with Melody Pomales taking 1st place and Ashley Mendez taking 2nd. The Boys had tough matches, losing to Rockledge 60 - 21, Apopka 66 - 10, Heritage 45 - 34, Oviedo 72 - 12, and Forest Ocala 45 - 27.</p><br><br>
+
+
+<img src="https://photos.smugmug.com/Galleries/20172018/Basketball-2017-2018/LBHS-V-Girls-Basketball-vs-Lake-Mary-Jan-11-2018/i-dCcb6f7/0/5e665f6c/X2/CS2A6819-X2.jpg" width="100%"><br><br>
+
+
+<div class="outer-div center-block">
+<h2 class="red center">Go Patriots!</h2>
+</div><br><br>
+
+
+</body>
+</html>
